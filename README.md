@@ -7,3 +7,10 @@ to build
 
 ### `./gateway` 
 to run, the config file used is `"/mesh_config/rf_gateway_config.json"`
+
+#C, Cpp clients
+##Install
+```bash
+apt-get install libmosquitto-dev
+sudo apt-get install libmosquittopp-dev
+```
