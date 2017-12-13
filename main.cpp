@@ -98,7 +98,6 @@ int main(int argc, const char *argv[])
 	json calib = read_json(app_path.parent_path().string()+"/mesh_config/bme280_calibration.json");
 
 	Log::config(config["log"]);
-	webserver_c		wbs(config);	//websocket manager : broadcast() and respond()
 	
 	Serial 			stream(config["serial"],calib);	// - process serial port stream : - calibrate sensors values
 									// - provides ready to store measures MAP of Nodes.Sensors.Values,Timestamp
