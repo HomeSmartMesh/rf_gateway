@@ -55,7 +55,7 @@ ________________________________________________________________________________
 
 #include "utils.hpp"
 
-#include "mqtt.hpp"
+#include "mqtt_rf.hpp"
 
 #include <assert.h>
 #include <string>
@@ -103,7 +103,7 @@ int main(int argc, const char *argv[])
 									// - provides ready to store measures MAP of Nodes.Sensors.Values,Timestamp
 									// - If not configured to be used then the .update() polling is neutral
 
-	mqtt_c			mqtt(config["mqtt_client"],stream);	//MQTT client app wrapper, will attempt connection on creation if params provided
+	mqtt_rf_c			mqtt(config["mqtt_client"],stream);	//MQTT client app wrapper, will attempt connection on creation if params provided
 
 	//#2 issue, it is likely that someone else is using the port in parallel
 	//discard first trash buffer if available right after opening the port

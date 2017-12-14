@@ -11,7 +11,7 @@ env.Program(    target='gateway',
                             [   'pilibs/serial.cpp',
                                 'pilibs/utils.cpp',
                                 'pilibs/mesh.cpp',
-                                'pilibs/mqtt.cpp',
+                                'pilibs/mqtt_rf.cpp',
                                 'pilibs/bme280_server.cpp',
                                 'pilibs/log.cpp'
                             ],
