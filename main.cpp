@@ -118,7 +118,6 @@ int main(int argc, const char *argv[])
 			NodeMap_t measures = stream.processBuffer();
 			if(measures.size() != 0)
 			{
-				std::string jMeasures = utl::stringify(measures,"update");//data type is "update"
 				mqtt.publish_measures(measures);
 			}
 		}
