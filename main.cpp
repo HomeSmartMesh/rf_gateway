@@ -56,6 +56,7 @@ ________________________________________________________________________________
 #include "utils.hpp"
 
 #include "mqtt_rf.hpp"
+#include "mesh.hpp"
 
 #include <assert.h>
 #include <string>
@@ -104,6 +105,9 @@ int main(int argc, const char *argv[])
 									// - If not configured to be used then the .update() polling is neutral
 
 	mqtt_rf_c			mqtt(config["mqtt_client"],stream);	//MQTT client app wrapper, will attempt connection on creation if params provided
+
+	//could be retrived from parsing the dongle startup or by querry
+	mesh::set_source_nodId(config["mqtt_client"]["dongle_node_id"]);
 
 	//#2 issue, it is likely that someone else is using the port in parallel
 	//discard first trash buffer if available right after opening the port
