@@ -94,7 +94,7 @@ int main(int argc, const char *argv[])
 {
 	boost::filesystem::path app_path(argv[0]);
 
-	json config = read_json(app_path.parent_path().string()+"/mesh_config/rf_gateway_config.json");
+	json config = read_json(app_path.parent_path().string()+"/rf_gateway_config.json");
 
 	json calib = read_json(app_path.parent_path().string()+"/mesh_config/bme280_calibration.json");
 

@@ -1,0 +1,38 @@
+{
+    "serial":{
+        "portname":"/dev/ttyUSB0",
+        "portbaud":"115200",
+        "enable":false
+    },
+    "log":{
+        "logfile":"/home/pi/share/rf_gateway_log.txt",
+        "help":"'level_out' is for console mode, and the 'level_file' is for the file record",
+        "level_out":"5",
+        "level_file":"3",
+        "levels":{
+            "0":"None",
+            "1":"Error",
+            "2":"Warning",
+            "3":"Info",
+            "4":"Debug",
+            "5":"Verbose"
+        }
+    },
+    "mqtt_client":{
+        "host"      :"10.0.0.12",
+        "port"      :1883,
+        "client_id"        :"rf_gateway",
+        "valueActions":{
+            "HeadTopic"     :"Nodes/",
+            "actions"   :["dimmer","heat"]
+        },
+        "jsonActions":{
+            "HeadTopic"     :"Actions/",
+            "actions"   :["dimmer","hexRGB","RGB","MeshRF","RawRF"]
+        },
+        "dongle_node_id":27,
+        "enable_connect"    :true,
+        "enable_subscribe"  :true,
+        "enable_publish"    :false
+    }
+}
