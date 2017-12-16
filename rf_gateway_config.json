@@ -2,7 +2,7 @@
     "serial":{
         "portname":"/dev/ttyUSB0",
         "portbaud":"115200",
-        "enable":false
+        "enable":true
     },
     "log":{
         "logfile":"/home/pi/share/rf_gateway_log.txt",
