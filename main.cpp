@@ -76,7 +76,6 @@ json read_json(std::string const &filename)
 {
 	if (boost::filesystem::exists(filename))
 	{
-		std::cout << "________________________________________________________________"<< std::endl;
 		std::cout << "Loading : "<< filename << std::endl;
 	}
 	else
@@ -94,7 +93,8 @@ int main(int argc, const char *argv[])
 {
 	boost::filesystem::path app_path(argv[0]);
 
-	json config = read_json(app_path.parent_path().string()+"/mesh_config/rf_gateway_config.json");
+	std::cout << "______________________Main Gateway Init______________________" << std::endl;
+	json config = read_json(app_path.parent_path().string()+"/rf_gateway_config.json");
 
 	json calib = read_json(app_path.parent_path().string()+"/mesh_config/bme280_calibration.json");
 
