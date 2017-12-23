@@ -1,12 +1,13 @@
-# RF Gateway
-Targets a Raspberry pi server to act as a gateway between the [https://github.com/HomeSmartMesh/IoT_Frameworks/tree/master/stm32_rf_dongle/rf_bridge](STM32 RF Gateway dongle) and Mosquitto as MQTT Broquer
+# Raspberry pi c++ RF Gateway
+Serial interface between the STM32 dongle and a the MQTT Broquer
+* [STM32 RF Dongle firmware](https://github.com/HomeSmartMesh/IoT_Frameworks/tree/master/stm32_rf_dongle/rf_bridge)
 
 # Usage
 ### `scons` 
 to build
 
 ### `./gateway` 
-to run, the config file used is `"/mesh_config/rf_gateway_config.json"`
+The config file used is `"/rf_gateway_config.json"`
 
 #C, Cpp clients
 ##Install
@@ -19,7 +20,6 @@ sudo apt-get install libmosquittopp-dev
 - Scons : a single line for the whole compilation, linker stuf,...
 - C++11 : Modern c++ is easier than javascript (the luxury of having a compiler)
 - Boost 1.60 (filesystem) : A warm welcome to Boost on RPI (see install instructions)
-- Poco-1.7.7 : HTTP server&client, websocket server : https://pocoproject.org/
 - json for modern c++ : json as easy to use as in javascript https://github.com/nlohmann/json (to be replaced by Poco::JSON)
 
 ### Boost installation on the Raspberry pi
