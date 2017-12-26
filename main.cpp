@@ -96,7 +96,7 @@ int main(int argc, const char *argv[])
 	std::cout << "______________________Main Gateway Init______________________" << std::endl;
 	json config = read_json(app_path.parent_path().string()+"/rf_gateway_config.json");
 
-	json calib = read_json(app_path.parent_path().string()+"/mesh_config/bme280_calibration.json");
+	json calib = read_json(app_path.parent_path().string()+"/bme280_calibration.json");
 
 	Log::config(config["log"]);
 	

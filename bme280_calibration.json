@@ -1,0 +1,32 @@
+{
+    "6":{
+        "Reg0x88" : "0xFB 6E F5 68 32 00 B1 92 77 D6",
+        "Reg0x92" : "0xD0 0B C3 17 35 00 F9 FF AC 26",
+        "Reg0x9C" : "0x0A D8 BD 10 00 4B",
+        "Reg0xE1" : "0x67 01 00 14 05 00 1E 6C"
+    },
+    "7":{
+        "Reg0x88" : "0x29 6D E4 64 32 00 79 90 AD D4 ",
+        "Reg0x92" : "0xD0 0B 95 1B 8B FF F9 FF AC 26 ",
+        "Reg0x9C" : "0x0A D8 BD 10 00 4B ",
+        "Reg0xE1" : "0x65 01 00 14 0C 00 1E 8F"
+    },
+    "15":{
+        "Reg0x88" : "0xA1 6C B6 67 32 00 17 93 38 D6",
+        "Reg0x92" : "0xD0 0B 52 1E E4 FF F9 FF AC 26",
+        "Reg0x9C" : "0x0A D8 BD 10 00 4B",
+        "Reg0xE1" : "0x6A 01 00 13 0E 00 1E 79"
+    },
+    "16":{
+        "Reg0x88" : "0xEB 6E BB 67 32 00 8F 93 E1 D5",
+        "Reg0x92" : "0xD0 0B BE 21 9B FF F9 FF AC 26",
+        "Reg0x9C" : "0x0A D8 BD 10 00 4B",
+        "Reg0xE1" : "0x66 01 00 14 09 00 1E 02"
+    },
+    "26":{
+        "Reg0x88" : "0xB7 6E ED 67 32 00 1B 94 36 D6",
+        "Reg0x92" : "0xD0 0B 4D 23 60 FF F9 FF AC 26",
+        "Reg0x9C" : "0x0A D8 BD 10 00 4B",
+        "Reg0xE1" : "0x69 01 00 14 01 00 1E 7B"
+    }
+}
