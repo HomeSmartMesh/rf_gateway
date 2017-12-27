@@ -29,9 +29,22 @@ Minimal install for filesystem support:
 ```
 mkdir boost
 cd boost
+
 wget http://sourceforge.net/projects/boost/files/boost/1.60.0/boost_1_60_0.tar.bz2
 tar xvfo boost_1_60_0.tar.bz2
 cd boost_1_60_0
+
+wget http://sourceforge.net/projects/boost/files/boost/1.62.0/boost_1_62_0.tar.bz2
+tar xvfo boost_1_62_0.tar.bz2
+cd boost_1_62_0
+
 ./bootstrap.sh --with-libraries=filesystem,system
 sudo ./b2 install
+```
+
+### mqtt test pub sub
+```
+mosquitto_pub -t 'jNodes/28/RGB' -m '{"Red":100,"Green":120,"Blue":255 }'
+
+mosquitto_sub -t 'jNodes/#' -h 10.0.0.12 -p 1883 -v
 ```

@@ -27,7 +27,7 @@
             "actions"   :["dimmer","heat"]
         },
         "jsonActions":{
-            "HeadTopic"     :"Actions/",
+            "HeadTopic"     :"jNodes/",
             "actions"   :["dimmer","hexRGB","RGB","MeshRF","RawRF"]
         },
         "dongle_node_id":27,
