@@ -22,12 +22,10 @@
         "host"      :"10.0.0.12",
         "port"      :1883,
         "client_id"        :"rf_gateway",
-        "valueActions":{
-            "HeadTopic"     :"Nodes/",
+        "Nodes":{
             "actions"   :["dimmer","heat"]
         },
-        "jsonActions":{
-            "HeadTopic"     :"jNodes/",
+        "jNodes":{
             "actions"   :["dimmer","hexRGB","RGB","MeshRF","RawRF"]
         },
         "dongle_node_id":27,
