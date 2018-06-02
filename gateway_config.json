@@ -22,24 +22,15 @@
         "host"      :"10.0.0.44",
         "port"      :1883,
         "client_id"        :"rf_gateway",
-        "valueActions":{
-            "HeadTopic"     :"Nodes/",
+        "Nodes":{
             "actions"   :["dimmer","heat"]
         },
-        "jsonActions":{
-            "HeadTopic"     :"Actions/",
+        "jNodes":{
             "actions"   :["dimmer","hexRGB","RGB","MeshRF","RawRF"]
         },
-<<<<<<< Updated upstream:rf_gateway_config.json
         "dongle_node_id":27,
-        "enable_connect"    :true,
-        "enable_subscribe"  :true,
-        "enable_publish"    :true
-=======
-        "dongle_node_id":38,
         "enable_connect"    :false,
         "enable_subscribe"  :false,
         "enable_publish"    :false
->>>>>>> Stashed changes:gateway_config.json
     }
 }
