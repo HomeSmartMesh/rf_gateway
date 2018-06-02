@@ -20,5 +20,5 @@ env.Program(    target='gateway',
                 CCFLAGS = ['-std=c++11'],
 				LIBS=['libmosquittopp'],
 				LIBPATH='/usr/local/lib/',
-				LINKFLAGS=['-lboost_system','-lboost_filesystem']
+				LINKFLAGS=[]
             )

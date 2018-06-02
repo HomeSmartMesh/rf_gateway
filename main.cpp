@@ -67,22 +67,11 @@ using json = nlohmann::json;
 
 #include "log.hpp"
 
-#include <boost/filesystem.hpp>
-//using namespace boost::filesystem;
-
 using namespace std;
 
 json read_json(std::string const &filename)
 {
-	if (boost::filesystem::exists(filename))
-	{
-		std::cout << "Loading : "<< filename << std::endl;
-	}
-	else
-	{
-		std::cout << "File not found : "<< filename << std::endl;
-		exit(1);
-	}
+	//TODO check file existence without boost
 	std::ifstream data_file(filename);
 	json result;
 	data_file >> result;
@@ -91,12 +80,13 @@ json read_json(std::string const &filename)
 
 int main(int argc, const char *argv[]) 
 {
-	boost::filesystem::path app_path(argv[0]);
+	string path(argv[0]);
 
 	std::cout << "______________________Main Gateway Init______________________" << std::endl;
-	json config = read_json(app_path.parent_path().string()+"/rf_gateway_config.json");
+	json config = read_json(path+"_config.json");
 
-	json calib = read_json(app_path.parent_path().string()+"/mesh_config/bme280_calibration.json");
+	json calib = read_json(path+"_bme280_calibration.json");
+
 
 	Log::config(config["log"]);
 	
