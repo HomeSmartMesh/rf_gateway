@@ -28,9 +28,9 @@
         "jNodes":{
             "actions"   :["dimmer","hexRGB","RGB","MeshRF","RawRF"]
         },
-        "dongle_node_id":27,
-        "enable_connect"    :false,
-        "enable_subscribe"  :false,
-        "enable_publish"    :false
+        "dongle_node_id":73,
+        "enable_connect"    :true,
+        "enable_subscribe"  :true,
+        "enable_publish"    :true
     }
 }
